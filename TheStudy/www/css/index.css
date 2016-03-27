@@ -24,7 +24,7 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
+    background-color:#45607b;
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
@@ -68,4 +68,28 @@ h1 {
     overflow:visible;
     padding:0px;
     text-align:center;
+}
+
+selection {
+	width: 50%;
+	margin: 0px auto;
+	
+}
+
+button {
+	center: center;
+	font-size: 24px;
+	padding: 100%
+	margin: 100px;
+	border: none;
+	-webkit-transition-duration: 0.4s;
+	background-color: #2e4052;
+	text-align: center;
+	color: white;
+}
+
+button:hover{
+	background-color: #5c80a3
+	
+	
 }

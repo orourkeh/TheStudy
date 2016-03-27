@@ -34,9 +34,12 @@
         
 		<h1>The Study</h1>
 		
-		<button onclick="loadSettingsPage()">Settings</button>
-		<button onclick="loadMapsPage()">Maps</button>
-		<button onclick="loadCoursesPage()">Courses</button>
+		<div id="selection">
+			<button type="button" onclick="loadMapsPage()">Maps</button></br>
+			<button type="button" onclick="loadCoursesPage()">Courses</button></br>
+		</div>
+		
+		<img src="img/SettingsButton.png" alt="Settings" align=right height="42" width="42" onclick="loadSettingsPage()" padding=10px>
 		
 		<script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
