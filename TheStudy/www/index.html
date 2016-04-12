@@ -27,11 +27,20 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>The Study</title>
+		<link rel="import" href="components/bower_components/paper-button/paper-button.html">
+		<script src="components/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+		<title>The Study</title>
 		
     </head>
     <body>
         
+		<div>
+			<paper-button>link</paper-button>
+			<paper-button raised>raised</paper-button>
+			<paper-button toggles raised>toggles</paper-button>
+			<paper-button disabled>disabled</paper-button>
+		</div>
+		
 		<h1>The Study</h1>
 		
 		<button onclick="loadSettingsPage()">Settings</button>
