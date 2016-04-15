@@ -28,25 +28,38 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
 		<link rel="import" href="components/bower_components/paper-button/paper-button.html">
+		<link rel="import" href="components/bower_components/paper-toolbar/paper-toolbar.html">
+		<link rel="import" href="components/bower_components/paper-icon-button/paper-icon-button.html">
+		<link rel="import" href="components/bower_components/iron-icons/iron-icons.html">
+		<link rel="import" href="components/bower_components/paper-menu-button/paper-menu-button.html">
+		<link rel="import" href="components/bower_components/paper-drawer-panel/paper-drawer-panel.html">
 		<script src="components/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
 		<title>The Study</title>
 		
     </head>
     <body>
-        
-		<div>
-			<paper-button>link</paper-button>
-			<paper-button raised>raised</paper-button>
-			<paper-button toggles raised>toggles</paper-button>
-			<paper-button disabled>disabled</paper-button>
+	
+        <div>
+			<paper-drawer-panel>
+				<paper-header-panel drawer>
+					<paper-toolbar>
+						<paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
+						<div><h1>Home</h1></div>
+					</paper-toolbar>
+						<div><paper-button onclick="loadHomePage()">Home</paper-button></div>
+						<div><paper-button onclick="loadMapsPage()">Maps</paper-button></div>
+						<div><paper-button onclick="loadCoursesPage()">Courses</paper-button></div>
+				</paper-header-panel>
+				<paper-header-panel main>
+					<paper-toolbar>
+						<paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
+							<div><h1>The Study</h1></div>
+					</paper-toolbar>
+						<div> Main content... </div>
+				</paper-header-panel>
+			</paper-drawer-panel>
 		</div>
-		
-		<h1>The Study</h1>
-		
-		<button onclick="loadSettingsPage()">Settings</button>
-		<button onclick="loadMapsPage()">Maps</button>
-		<button onclick="loadCoursesPage()">Courses</button>
-		
+			
 		<script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
