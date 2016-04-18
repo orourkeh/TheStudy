@@ -29,7 +29,10 @@
 		<link rel="import" href="components/bower_components/iron-icons/iron-icons.html">
 		<link rel="import" href="components/bower_components/paper-menu-button/paper-menu-button.html">
 		<link rel="import" href="components/bower_components/paper-drawer-panel/paper-drawer-panel.html">
+		<link rel="import" href="components/bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
 		
+		<link rel="import" href="bower_components/web-animations-next/web-animations.html">
+		<link rel="import" href="bower_components/web-animations-js/web-animations.html">
 		<!-- Enables Polymer elements-->
 		<script src="components/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
 		
@@ -65,7 +68,28 @@
 						<div><h1>Courses</h1></div>
 					</paper-toolbar>
 						<!-- All element to go in the main screen content area go here-->
-						<div> Main content... </div>
+						<div> 
+							<paper-card id="courseMenus" heading="options">
+								<div class="card-content">
+									<paper-dropdown-menu id="campusSelect" label="Location" vertical-align="top" horizontal-align="right">
+										<paper-listbox class="dropdown-content" selected="2">
+											<div><paper-item>North</paper-item></div>
+											<div><paper-item>South</paper-item></div>
+											<div><paper-item>Both</paper-item></div>
+										</paper-listbox>
+									</paper-dropdown-menu>
+								
+									<paper-dropdown-menu id="prefixSelect" label="Prefix" float="right">
+										<paper-listbox class="dropdown-content" selected="2">
+											<div><paper-item>CS</paper-item></div>
+											<div><paper-item>MA</paper-item></div>
+											<div><paper-item>AS</paper-item></div>
+										</paper-listbox>
+									</paper-dropdown-menu>
+								
+								</div>
+							</paper-card>
+						</div>
 				</paper-header-panel>
 			</paper-drawer-panel>
 		</div>
