@@ -3,6 +3,7 @@
  */
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent highlighting */
+	overflow-x: hidden;
 }
 
 h2{
@@ -33,33 +34,61 @@ h1 {
     text-align:center;
 }
 
+.course{
+	width: 95%;
+	margin: 10px;
+	font-size: 4vw;
+}
+
+.class-head{
+	padding:10px;
+	font-size:5vw;
+	font-weight: bold;
+	background: #06DCFB;
+}
+
+.class-location{
+	width:45%;
+	padding: 5px;
+	float:left;
+	background:white;
+}
+
+.class-times{
+	width: 45%;
+	padding: 5px;
+	display:inline;
+	float:right;
+	
+}
+
 .scrollable{
 	overflow-y: scroll;
 }
+
+
 .card-content{
 	background:white;
 	color: black;
 }
+
 .dropdown-content{
 	background:white;
-	font-size:10vw;
+	font-size:7vw;
 	display:block;
+	padding: 10px;
 	color: black;
 }
-#courseMenus{
-	width: 100%;
-}
+
 #campusSelect{
 	width: 40%;
-	margin-left:25px;
+	margin-left:10px;
 	font-size:5vw;
-	margin-bottom:10px;
 }
 #prefixSelect{
 	width: 40%;
 	float:right;
-	margin-right:25px;
-	margin-bottom:10px;
+	margin-right:10px;
 	font-size:5vw;
 }
 
