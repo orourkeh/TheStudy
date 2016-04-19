@@ -23,6 +23,8 @@
 			Polymer content to enable visual design elements
 			Current Polymer content avaiable at https://www.polymer-project.org/1.0/
 		-->
+		<link rel="import" href="components/bower_components/web-animations-next/web-animations.html">
+		<link rel="import" href="components/bower_components/web-animations-js/web-animations.html">
 		<link rel="import" href="components/bower_components/paper-button/paper-button.html">
 		<link rel="import" href="components/bower_components/paper-toolbar/paper-toolbar.html">
 		<link rel="import" href="components/bower_components/paper-icon-button/paper-icon-button.html">
@@ -33,11 +35,11 @@
 		<link rel="import" href="components/bower_components/paper-item/paper-item.html">
 		<link rel="import" href="components/bower_components/paper-listbox/paper-listbox.html">
 		<link rel="import" href="components/bower_components/paper-card/paper-card.html">
+		<link rel="import" href="components/bower_components/paper-menu/paper-menu.html">
 		
 		<!-- Enables Polymer elements-->
-		<script src="components/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
-		
-		
+		<!--<script src="components/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+-->
 		
 		<title>The Study</title>	
     </head>
@@ -71,30 +73,27 @@
 						<!-- All element to go in the main screen content area go here-->
 						<div> 
 							<paper-card id="courseMenus">
-								<div class="card-content">
-									<paper-dropdown-menu id="campusSelect" label="Location" vertical-align="top" horizontal-align="right">
-										<paper-listbox class="dropdown-content">
-											<div><paper-item value="north">North</paper-item></div>
-											<div><paper-item value="south">South</paper-item></div>
-											<div><paper-item value="both">Both</paper-item></div>
-										</paper-listbox>
-									</paper-dropdown-menu>
-
-
-									<paper-dropdown-menu id="prefixSelect" label="Prefix" float="right">
-										<paper-listbox class="dropdown-content">
-											<div><paper-item>All</paper-item></div>
-											<div><paper-item>MA</paper-item></div>
-											<div><paper-item>CS</paper-item></div>
-										</paper-listbox>
-									</paper-dropdown-menu>	
+								<div class="card-content" align="center">
+									<div id="show-campuses"></div><!--Excutes function getCampuses in courses.js -->
+									<div id="show-prefixes"></div><!--Excutes function getPrefixes in courses.js -->
+								</div>
+								<div class="card-content" align="center">
+									<paper-button id="refresh"><iron-icon icon="refresh"></iron-icon> Refresh</paper-button>
 								</div>
 							</paper-card>
 						</div>
+						<!-- Load JSON file and create a card for each class -->
+						<div id="show-classes"></div><!--Excutes function getClasses in courses.js -->
+						<script src="jquery-1.9.1.min.js"></script>
+						<script src="js/courses.js"></script>
+
+						
+						
+						<!--
 							<div class="scrollable" style="-webkit-overflow-scrolling: touch;"> 
 							<paper-card class="course">
 								<div class="class-head">Accounting 201</div>
-								<div class="class-location">Location: North Campus\n
+								<div class="class-information">Location: North Campus\n
 									Description: Bow jobs and hookers asna toher text to detcted ofashdfjlakshdfhk </div>
 								<div class="class-times">
 									<paper-menu>
@@ -116,7 +115,8 @@
 									</paper-menu>								
 								</div>
 							</paper-card>
-						</div>
+							
+						</div>-->
 				</paper-header-panel>
 			</paper-drawer-panel>
 		</div>

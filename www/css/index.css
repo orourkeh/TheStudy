@@ -47,8 +47,8 @@ h1 {
 	background: #06DCFB;
 }
 
-.class-location{
-	width:45%;
+.class-information{
+	width:60%;
 	padding: 5px;
 	float:left;
 	background:white;
@@ -79,19 +79,31 @@ h1 {
 	padding: 10px;
 	color: black;
 }
-
-#campusSelect{
-	width: 40%;
+#courseMenus{
+	width: 100%;
+	display: inline;
+}
+#show-campuses{
+	width: 50%;
+	float: left;
 	margin-left:10px;
 	font-size:5vw;
 }
-#prefixSelect{
+
+#show-prefixes{
 	width: 40%;
 	float:right;
 	margin-right:10px;
 	font-size:5vw;
 }
+#refresh{
+	width: 40%;
+	float: center;
+}
 
+#show-data{
+	width: 100%;
+}
 #mapNorthCard{
 	width: 95%;
 	margin: 10px;
@@ -108,6 +120,9 @@ h1 {
 	width: 95%;
 	margin: 10px;
 	background: #9669FE;
+}
+paper-item{
+	display: block;
 }
 
 paper-button.drawer{
