@@ -1,23 +1,6 @@
 /*
 file decsritptor
 
-
-Example finished course html:
-
-<paper-card class="course">
-	<div class="class-head">Accounting 201</div>
-		<div class="class-location"> Location: North Campus\n Description: example</div>
-		<div class="class-times">
-			<paper-menu>
-				<paper-item>Monday 2:00-10:00 PM</paper-item>
-				<paper-item>Tuesday 4:00-10:00 PM</paper-item>
-				<paper-item>Wednesday 2:00-10:00 PM</paper-item>
-				<paper-item>Thursday 2:00-10:00 PM</paper-item>
-			</paper-menu>								
-		</div>
-</paper-card>
-
-
  */
  
  //Fills dropdown element with all prefixes found in JSON file
@@ -31,7 +14,7 @@ Example finished course html:
 		  });
 		  showData.empty();
 			// only do anything if there's items in the course data we've pulled
-			var content = '<paper-dropdown-menu id="prefixSelect" label="Prefix" float="right">';
+			var content = '<paper-dropdown-menu id="prefixSelect" label="Prefix" float="right" no-animation>';
 			content += '<paper-listbox class="dropdown-content">';
 		  if (courses.length) 
 		  {
@@ -76,7 +59,7 @@ Example finished course html:
 		  });
 		  showData.empty();
 			// only do anything if there's items in the course data we've pulled
-			var content = '<paper-dropdown-menu id="campusSelect" label="Location">';
+			var content = '<paper-dropdown-menu id="campusSelect" label="Location" no-animation>';
 			content += '<paper-listbox class="dropdown-content">';
 		  if (courses.length) 
 		  {
@@ -112,6 +95,28 @@ Example finished course html:
  }
  
  
+ 
+ /*
+Example finished course html:
+
+<paper-card class="course">
+	<div class="class-head">Accounting 201</div>
+		<div class="class-location"> Location: North Campus\n Description: example</div>
+		<div class="class-times">
+			<paper-menu>
+				<paper-item>Monday 2:00-10:00 PM</paper-item>
+				<paper-item>Tuesday 4:00-10:00 PM</paper-item>
+				<paper-item>Wednesday 2:00-10:00 PM</paper-item>
+				<paper-item>Thursday 2:00-10:00 PM</paper-item>
+			</paper-menu>
+</paper-card>								
+
+ get Classes()
+ 
+ reads JSON file to obtain offered courses
+ removes classes not meeting selection criteria from dropdown menus
+ creates HTML to display classes e.x. shown above
+ */
  function getClasses()
  {
 	 var showData = $('#show-classes');

@@ -17,13 +17,27 @@ File Organization
 -------
 All app specific files are in the /www/ directory.
 
-/css/ - All css files.  1 per app page.
+/components/ - Polymer files used for UI elements
+
+/css/ - Contains index.css the main style sheet for the application
 
 /img/ - All images used on pages.
 
-/js/  - All javascript files.
+/js/  - All javascript files and JSON (database) files.
 
 /res/ - Splash screens for different app versions and sizes.
+
+/spec/ - html files used for debugging.  Will be removed for final release.
+
+
+Files
+------
+
+/*.html -  HTML files used to display information on screen for respective pages
+
+config.xml - Configuration file used by Adobe Phonegap to build application
+
+jquery-1.9.1.min  - JQuery dependency to loading and reading JSON files
 
 Created By
 ------------
