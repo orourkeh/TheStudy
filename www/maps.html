@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <!--
- Need to put file description here
+Maps Pages
+
+Displays the 3 campus locations The Study offers and links to thier map lcoation
 -->
 <html>
     <head>
@@ -11,7 +13,7 @@
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
 		<!--Gives correct orientation and disables tap delay used by browsers -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=1, width=device-width" />
         
 		<!-- Javscript and CSS code use for each page -->
 		<script src="js/pageLoader.js" type="text/javascript"></script>
@@ -28,6 +30,7 @@
 		<link rel="import" href="components/bower_components/paper-icon-button/paper-icon-button.html">
 		<link rel="import" href="components/bower_components/iron-icons/iron-icons.html">
 		<link rel="import" href="components/bower_components/paper-menu-button/paper-menu-button.html">
+		<link rel="import" href="components/bower_components/paper-card/paper-card.html">
 		<link rel="import" href="components/bower_components/paper-drawer-panel/paper-drawer-panel.html">
 		
 		<!-- Enables Polymer elements-->
@@ -65,7 +68,22 @@
 						<div><h1>Maps</h1></div>
 					</paper-toolbar>
 						<!-- All element to go in the main screen content area go here-->
-						<div> Main content... </div>
+						<div class="scrollable" style="-webkit-overflow-scrolling: touch;"> 
+							<paper-card id="mapNorthCard" heading="The Study North" >
+								<div class="card-content"><a href="geo:38.029020, -84.502431"><img width=100% src="img/northMap.png"></img></a></div>
+								<div class="card-content">306B Complex Commons, Lexington, KY 40526 (in the Blanding-Kirwan Complex on south campus)</div>
+							</paper-card>
+							
+							<paper-card id="mapSouthCard" heading="The Study South" >
+								<div class="card-content"><a href="geo:38.040100, -84.501863"><img width=100% src="img/southMap.png"></img></a></div>
+								<div class="card-content">Champions Court 1, Lexington, KY 40526 (the residence hall across from the Student Center on north campus)</div>
+							</paper-card>
+							
+							<paper-card id="mapPresUCard" heading="Presentation U! in the Hub" >
+								<div class="card-content"><a href="geo:38.032810, -84.501739"><img width=100% src="img/presUMap.png"></img></a></div>
+								<div class="card-content">William T Young Library Basement</div>
+							</paper-card>
+						</div>
 				</paper-header-panel>
 			</paper-drawer-panel>
 		</div>

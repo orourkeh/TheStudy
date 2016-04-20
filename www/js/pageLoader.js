@@ -1,6 +1,9 @@
 /*
-file decriptor
+file decripto
+
  */
+ 
+ 
 var app = {
     // Application Constructor
     initialize: function() {
@@ -18,7 +21,7 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        app.receivedEvent('deviceready');
+		document.addEventListener('deviceready', function() {navigator.splashscreen.hide();});
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -33,6 +36,7 @@ var app = {
     }
 };
 
+//Changes current window view to respective pages
 function loadHomePage()
 {
 	window.location = "index.html"
