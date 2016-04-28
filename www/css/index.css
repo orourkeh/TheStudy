@@ -79,6 +79,24 @@ h1 {
 	padding: 10px;
 	color: black;
 }
+#test{
+	width: 50%;
+	padding: 10px;
+	background: #f1f1f1;
+}
+#test2{
+	padding: 20px;
+}
+#about{
+	width: 95%;
+	margin: 10px;
+	background: #06DCFB;
+}
+#peer{
+	width: 95%;
+	margin: 10px;
+	background: #01F33E;
+}
 #courseMenus{
 	width: 100%;
 	display: inline;

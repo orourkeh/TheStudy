@@ -63,7 +63,6 @@
 						<div><paper-button class="drawer" onclick="loadHomePage()"><h2><iron-icon icon="home"></iron-icon> Home</h2></paper-button></div>
 						<div><paper-button class="drawer" onclick="loadCoursesPage()"><h2><iron-icon icon="dns"></iron-icon> Courses</h2></paper-button></div>
 						<div><paper-button class="drawer" onclick="loadMapsPage()"><h2><iron-icon icon="explore"></iron-icon> Maps</h2></paper-button></div>
-						<div><paper-button class="drawer" onclick="loadSettingsPage()"><h2><iron-icon icon="settings"></iron-icon> Settings</h2></paper-button></div>
 				</paper-header-panel>
 				<paper-header-panel main>
 					<paper-toolbar>
@@ -84,16 +83,17 @@
 								<div class="card-content" align="center">
 									<paper-button id="refresh"><iron-icon icon="refresh"></iron-icon> Refresh</paper-button>
 								</div>
+								<div class="dropdown">
+								  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+								  <span class="caret"></span></button>
+								  <ul class="dropdown-menu">
+									<li><a href="#">HTML</a></li>
+									<li><a href="#">CSS</a></li>
+									<li><a href="#">JavaScript</a></li>
+								  </ul>
+								</div>
 							</paper-card>
 						</div>
-									<paper-dropdown-menu id="campusSelect" label="Location" no-animation>
-										<paper-menu class="dropdown-content">
-											<paper-item>asdfasdf</paper-item>
-											<paper-item>asdfsdf</paper-item>
-											<paper-item>afsdf</paper-item>
-											<paper-item>asdfdf</paper-item>
-										</paper-menu>
-									</paper-dropdown-menu>
 						<!-- Load JSON file and create a card for each class -->
 						
 						<div id="show-classes"></div><!--Excutes function getClasses in courses.js -->
