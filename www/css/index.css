@@ -46,7 +46,7 @@ h1 {
 }
 
 .class-information{
-	width:60%;
+	width:100%;
 	padding: 5px;
 	float:left;
 	background:white;
@@ -55,7 +55,7 @@ h1 {
 .class-times{
 	width: 45%;
 	padding: 5px;
-	display:inline;
+	display:block;
 	float:right;
 	
 }

@@ -132,7 +132,15 @@ Example finished course html:
 					{
 						content += '<paper-card class="course">';
 						content += '<div class="class-head" style="	background:' + pastelColors[Math.floor(Math.random()*pastelColors.length)] + ';">' + courses[i].name + '</div>';
-						content += '<div class="class-information"><b>Location: </b>' + courses[i].location + '\n' + '<b>Description: </b>' + courses[i].desc + '</div>';	
+						content += '<div class="class-information"><b>Location: </b>' + courses[i].location + '\n' + '</br><b>Description: </b>' + courses[i].desc + '</div>';	
+						content += '<div class="class-information">';
+						content += '<paper-tabs width="100%" scrollable>';
+						for(var j = 0; j < courses[i].times.length; j++)
+						{
+							content += '<paper-tab>' + courses[i].times[j] + '</paper-tab>';
+						}
+						content += '</paper-tabs>';
+						content += '</div>';
 						content += '</paper-card>'	
 					}
 				}				
