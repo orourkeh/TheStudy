@@ -33,7 +33,6 @@ h1 {
     padding:0px;
     text-align:center;
 }
-
 .course{
 	width: 95%;
 	margin: 10px;
@@ -44,11 +43,10 @@ h1 {
 	padding:10px;
 	font-size:5vw;
 	font-weight: bold;
-	background: #06DCFB;
 }
 
 .class-information{
-	width:60%;
+	width:100%;
 	padding: 5px;
 	float:left;
 	background:white;
@@ -57,7 +55,7 @@ h1 {
 .class-times{
 	width: 45%;
 	padding: 5px;
-	display:inline;
+	display:block;
 	float:right;
 	
 }
@@ -79,6 +77,16 @@ h1 {
 	padding: 10px;
 	color: black;
 }
+#about{
+	width: 95%;
+	margin: 10px;
+	background: #06DCFB;
+}
+#peer{
+	width: 95%;
+	margin: 10px;
+	background: #01F33E;
+}
 #courseMenus{
 	width: 100%;
 	display: inline;
@@ -95,6 +103,26 @@ h1 {
 	float:right;
 	margin-right:10px;
 	font-size:5vw;
+}
+
+#prefixSelect{
+	width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+	outline: none;
+}
+#campusSelect{
+	width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 #refresh{
 	width: 40%;

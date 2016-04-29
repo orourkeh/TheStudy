@@ -14,8 +14,7 @@ file decsritptor
 		  });
 		  showData.empty();
 			// only do anything if there's items in the course data we've pulled
-			var content = '<paper-dropdown-menu id="prefixSelect" label="Prefix" float="right" no-animation>';
-			content += '<paper-listbox class="dropdown-content">';
+			var content = '<select id="prefixSelect" name="prefixSelect" float="right">';
 		  if (courses.length) 
 		  {
 			var prefixList = [];
@@ -39,10 +38,9 @@ file decsritptor
 			}
 			for(var i = 0; i< prefixList.length; i++)
 			{
-				content += '<div><paper-item>' + prefixList[i] + '</paper-item></div>';
+				content += '<option>' + prefixList[i] + '</option>';
 			}
-			content += '</paper-listbox>';
-			content += '</paper-dropdown-menu>';
+			content += '</select>';
 			showData.append(content);
 			// adds the content we've created to the html page
 		  }
@@ -59,8 +57,7 @@ file decsritptor
 		  });
 		  showData.empty();
 			// only do anything if there's items in the course data we've pulled
-			var content = '<paper-dropdown-menu id="campusSelect" label="Location" no-animation>';
-			content += '<paper-listbox class="dropdown-content">';
+			var content = '<select id="campusSelect" name="campusSelect">';
 		  if (courses.length) 
 		  {
 			var campusList = [];
@@ -84,10 +81,9 @@ file decsritptor
 			}
 			for(var i = 0; i< campusList.length; i++)
 			{
-				content += '<div><paper-item>' + campusList[i] + '</paper-item></div>';
+				content += '<option>' + campusList[i] + '</option>';
 			}
-			content += '</paper-listbox>';
-			content += '</paper-dropdown-menu>';
+			content += '</select>';
 			showData.append(content);
 			// adds the content we've created to the html page
 		  }
@@ -99,26 +95,16 @@ file decsritptor
  /*
 Example finished course html:
 
-<paper-card class="course">
-	<div class="class-head">Accounting 201</div>
-		<div class="class-location"> Location: North Campus\n Description: example</div>
-		<div class="class-times">
-			<paper-menu>
-				<paper-item>Monday 2:00-10:00 PM</paper-item>
-				<paper-item>Tuesday 4:00-10:00 PM</paper-item>
-				<paper-item>Wednesday 2:00-10:00 PM</paper-item>
-				<paper-item>Thursday 2:00-10:00 PM</paper-item>
-			</paper-menu>
-</paper-card>								
-
  get Classes()
  
  reads JSON file to obtain offered courses
  removes classes not meeting selection criteria from dropdown menus
  creates HTML to display classes e.x. shown above
  */
+
  function getClasses()
  {
+	var pastelColors = Array("#1FCB4A","#48FB0D","#2DC800","#59DF00","#5757FF","#62A9FF","#62D0FF","#06DCFB","#01FCEF","#03EBA6","#01F33E","#800080","#872187","#9A03FE","#892EE4","#3923D6","#2966B8","#23819C");
 	 var showData = $('#show-classes');
 		var campusSelected = $( "#campusSelect" ).val();
 		var prefixSelected = $( "#prefixSelect" ).val();
@@ -145,8 +131,16 @@ Example finished course html:
 					if(courses[i].prefix == prefixSelected || prefixSelected == "All")
 					{
 						content += '<paper-card class="course">';
-						content += '<div class="class-head">' + courses[i].name + '</div>';
-						content += '<div class="class-information"><b>Location: </b>' + courses[i].location + '\n' + '<b>Description: </b>' + courses[i].desc + '</div>';	
+						content += '<div class="class-head" style="	background:' + pastelColors[Math.floor(Math.random()*pastelColors.length)] + ';">' + courses[i].name + '</div>';
+						content += '<div class="class-information"><b>Location: </b>' + courses[i].location + '\n' + '</br><b>Description: </b>' + courses[i].desc + '</div>';	
+						content += '<div class="class-information">';
+						content += '<paper-tabs width="100%" scrollable>';
+						for(var j = 0; j < courses[i].times.length; j++)
+						{
+							content += '<paper-tab>' + courses[i].times[j] + '</paper-tab>';
+						}
+						content += '</paper-tabs>';
+						content += '</div>';
 						content += '</paper-card>'	
 					}
 				}				
@@ -162,8 +156,5 @@ Example finished course html:
 $(document).ready(getCampuses);//Excutes getCampuses() on page load
 $(document).ready(getPrefixes);//Executes getPrefies() on page load
 $("#refresh").on("click", getClasses);//Executes getClasses() when refresh button is hit
-$(document).ready(getClasses);//Executes getClasses() on page load
-
-
 	
 	

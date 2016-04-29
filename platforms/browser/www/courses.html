@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <!--
- Need to put file description here
+ Courses Page
+ 
+ Displays classes offered by the study and menus to sort the classes.  
 -->
 <html>
     <head>
@@ -23,13 +25,8 @@
 			Polymer content to enable visual design elements
 			Current Polymer content avaiable at https://www.polymer-project.org/1.0/
 		-->
-		<!--<link rel="import" href="components/bower_components/web-animations-next/web-animations.min.js">
-		<link rel="import" href="components/bower_components/web-animations-js/web-animations.min.js">
-		-->
 		<link rel="import" href="components/bower_components/iron-icons/iron-icons.html">
-		
 		<link rel="import" href="components/bower_components/polymer/polymer.html">
-		
 		<link rel="import" href="components/bower_components/paper-button/paper-button.html">
 		<link rel="import" href="components/bower_components/paper-toolbar/paper-toolbar.html">
 		<link rel="import" href="components/bower_components/paper-icon-button/paper-icon-button.html">
@@ -40,7 +37,8 @@
 		<link rel="import" href="components/bower_components/paper-listbox/paper-listbox.html">
 		<link rel="import" href="components/bower_components/paper-card/paper-card.html">
 		<link rel="import" href="components/bower_components/paper-menu/paper-menu.html">
-		
+		<link rel="import" href="components/bower_components/paper-tabs/paper-tabs.html">
+		<link rel="import" href="components/bower_components/paper-tab/paper-tab.html">		
 
 		<!-- Enables Polymer elements-->
 		<script src="components/bower_components/webcomponentsjs/webcomponents.js"></script>
@@ -66,7 +64,6 @@
 						<div><paper-button class="drawer" onclick="loadHomePage()"><h2><iron-icon icon="home"></iron-icon> Home</h2></paper-button></div>
 						<div><paper-button class="drawer" onclick="loadCoursesPage()"><h2><iron-icon icon="dns"></iron-icon> Courses</h2></paper-button></div>
 						<div><paper-button class="drawer" onclick="loadMapsPage()"><h2><iron-icon icon="explore"></iron-icon> Maps</h2></paper-button></div>
-						<div><paper-button class="drawer" onclick="loadSettingsPage()"><h2><iron-icon icon="settings"></iron-icon> Settings</h2></paper-button></div>
 				</paper-header-panel>
 				<paper-header-panel main>
 					<paper-toolbar>
@@ -82,56 +79,15 @@
 									<div id="show-prefixes"></div><!--Excutes function getPrefixes in courses.js -->
 								</div>
 								<div class="card-content" align="center">
-
-								</div>
-								<div class="card-content" align="center">
 									<paper-button id="refresh"><iron-icon icon="refresh"></iron-icon> Refresh</paper-button>
 								</div>
 							</paper-card>
 						</div>
-															<paper-dropdown-menu id="campusSelect" label="Location" no-animation>
-										<paper-menu class="dropdown-content">
-											<paper-item>asdfasdf</paper-item>
-											<paper-item>asdfsdf</paper-item>
-											<paper-item>afsdf</paper-item>
-											<paper-item>asdfdf</paper-item>
-										</paper-menu>
-									</paper-dropdown-menu>
 						<!-- Load JSON file and create a card for each class -->
+						
 						<div id="show-classes"></div><!--Excutes function getClasses in courses.js -->
-						<script src="jquery-1.9.1.min.js"></script>
+						<script src="jquery-1.9.1.min.js"></script><!-- Dpendednt script used for reading JSON files -->
 						<script src="js/courses.js"></script>
-
-						
-						
-						<!--
-							<div class="scrollable" style="-webkit-overflow-scrolling: touch;"> 
-							<paper-card class="course">
-								<div class="class-head">Accounting 201</div>
-								<div class="class-information">Location: North Campus\n
-									Description: Bow jobs and hookers asna toher text to detcted ofashdfjlakshdfhk </div>
-								<div class="class-times">
-									<paper-menu>
-										  <paper-item>Monday 2:00-10:00 PM</paper-item>
-										  <paper-item>Tuesday 4:00-10:00 PM</paper-item>
-										  <paper-item>Wednesday 2:00-10:00 PM</paper-item>
-										  <paper-item>Thursday 2:00-10:00 PM</paper-item>
-									</paper-menu>								
-								</div>
-							</paper-card>
-							<paper-card class="course">
-								<div class="class-head">Accounting 201</div>
-								<div class="class-location">Location: North Campus\n
-									Description: Bow jobs and hookers asna toher text to detcted ofashdfjlakshdfhk </div>
-								<div class="class-times">
-									<paper-menu>
-										  <paper-item>Monday 2:00-10:00 PM</paper-item>
-										  <paper-item>Tuesday 4:00-10:00 PM</paper-item>
-									</paper-menu>								
-								</div>
-							</paper-card>
-							
-						</div>-->
 				</paper-header-panel>
 			</paper-drawer-panel>
 		</div>
