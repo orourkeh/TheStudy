@@ -33,7 +33,6 @@ h1 {
     padding:0px;
     text-align:center;
 }
-
 .course{
 	width: 95%;
 	margin: 10px;
@@ -44,7 +43,6 @@ h1 {
 	padding:10px;
 	font-size:5vw;
 	font-weight: bold;
-	background: #06DCFB;
 }
 
 .class-information{
@@ -79,14 +77,6 @@ h1 {
 	padding: 10px;
 	color: black;
 }
-#test{
-	width: 50%;
-	padding: 10px;
-	background: #f1f1f1;
-}
-#test2{
-	padding: 20px;
-}
 #about{
 	width: 95%;
 	margin: 10px;
@@ -113,6 +103,26 @@ h1 {
 	float:right;
 	margin-right:10px;
 	font-size:5vw;
+}
+
+#prefixSelect{
+	width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+	outline: none;
+}
+#campusSelect{
+	width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 #refresh{
 	width: 40%;

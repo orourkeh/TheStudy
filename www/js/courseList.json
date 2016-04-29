@@ -1,65 +1,321 @@
 {
   "items": [
     {
-      "prefix": "ACC",
       "cnumber": 201,
-      "name": "Financial Accounting I",
-	  "location": "North Campus",
       "desc": "This course is designed to provide an introduction to financial accounting from the users’ perspectives.",
-      "times": ["Monday 2:00-10:00 PM","Tuesday 4:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:00-10:00 PM" ]
+      "location": "North Campus",
+      "name": "Financial Accounting I",
+      "prefix": "ACC",
+      "times": [ "Monday 2:00-10:00 PM", "Tuesday 4:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:00-10:00 PM" ]
     },
     {
+      "cnumber": 301,
+      "desc": "Enter Desc",
+      "location": "North Campus",
+      "name": "Intermediate Accounting 1",
+      "prefix": "ACC",
+      "times": [ "Monday 6:00-10:00 PM", "Tuesday 4:00-8:00 PM", "Wednesday 2:00-6:00 PM", "Thursday 2:00-6:00 PM" ]
+    },
+    {
+      "cnumber": 105,
+      "desc": "Enter Desc",
+      "location": "North Campus",
+      "name": "General College Chemistry",
+      "prefix": "CHE",
+      "times": [ "Monday 2:00-10:00 PM", "Tuesday 2:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:00-10:00 PM" ]
+    },
+    {
+      "cnumber": 201,
+      "desc": "Enter Desc",
+      "location": "North Campus",
+      "name": "Principles of Economics 1",
+      "prefix": "ECO",
+      "times": [ "Monday 2:00-10:00 PM", "Tuesday 4:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:00-10:00 PM" ]
+    },
+    {
+      "cnumber": 391,
+      "desc": "Enter Desc",
+      "location": "North Campus",
+      "name": "Economic and Business Statistics",
+      "prefix": "ECO",
+      "times": [ "Monday 6:00-10:00 PM", "Tuesday 4:00-8:00 PM", "Wednesday 2:00-10:00 PM" ]
+    },
+    {
+      "cnumber": 162,
+      "desc": "Enter Desc",
+      "location": "North Campus",
+      "name": "Finite Math and its Applications",
       "prefix": "MA",
+      "times": [ "Monday 6:00-10:00 PM", "Tuesday 4:00-10:00 PM", "Wednesday 2:00-10:00 PM" ]
+    },
+    {
+      "cnumber": 109,
+      "desc": "Enter Desc",
+      "location": "North Campus",
+      "name": "College Algebra",
+      "prefix": "MA",
+      "times": [ "Monday 4:00-10:00 PM", "Tuesday 2:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:00-10:00 PM" ]
+    },
+    {
+      "cnumber": 110,
+      "desc": "Enter Desc",
+      "location": "North Campus",
+      "name": "Precalculus with Trigonometry",
+      "prefix": "MA",
+      "times": [ "None for Spring 2016" ]
+    },
+    {
+      "cnumber": 111,
+      "desc": "Enter Desc",
+      "location": "North Campus",
+      "name": "Contemporary Mathematics",
+      "prefix": "MA",
+      "times": [ "Monday 2:00-10:00 PM", "Tuesday 3:00-10:00 PM", "Wednesday 4:00-8:00 PM", "Thursday 4:00-10:00 PM" ]
+    },
+    {
       "cnumber": 113,
-      "name": "Calculus 1",
-	  "location": "North Campus",
       "desc": "Other stuff",
-      "times": ["Monday 2:00-10:00 PM","Tuesday 4:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:00-10:00 PM" ]
-    },
-	{
+      "location": "North Campus",
+      "name": "Calculus 1",
       "prefix": "MA",
+      "times": [ "Monday 2:00-10:00 PM", "Tuesday 4:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:00-10:00 PM" ]
+    },
+    {
+      "cnumber": 114,
+      "desc": "Enter Desc",
+      "location": "North Campus",
+      "name": "Calculus 2",
+      "prefix": "MA",
+      "times": [ "Monday 2:00-10:00 PM", "Tuesday 2:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:00-10:00 PM" ]
+    },
+    {
+      "cnumber": 213,
+      "desc": "Enter Desc",
+      "location": "North Campus",
+      "name": "Calculus 3",
+      "prefix": "MA",
+      "times": [ "Monday 6:00-10:00 PM", "Tuesday 4:00-8:00 PM", "Wednesday 2:00-6:00 PM", "Thursday 2:00-6:00 PM" ]
+    },
+    {
+      "cnumber": 123,
+      "desc": "Enter Desc",
+      "location": "North Campus",
+      "name": "Elementary Calculus and its Applications",
+      "prefix": "MA",
+      "times": [ "Monday 2:00-10:00 PM", "Tuesday 2:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:00-10:00 PM" ]
+    },
+    {
+      "cnumber": 230,
+      "desc": "Enter Desc",
+      "location": "North Campus",
+      "name": "Organic Chemistry",
+      "prefix": "CHE",
+      "times": [ "Tuesday 6:00-10:00 PM", "Thursday 2:00-7:00 PM" ]
+    },
+    {
+      "cnumber": 231,
+      "desc": "Enter Desc",
+      "location": "North Campus",
+      "name": "General University Physics",
+      "prefix": "PHY",
+      "times": [ "Monday 6:00-10:00 PM", "Tuesday 4:00-8:00 PM", "Wednesday 2:00-6:00 PM", "Thursday 2:00-6:00 PM" ]
+    },
+    {
+      "cnumber": 210,
+      "desc": "Enter Desc",
+      "location": "North Campus",
+      "name": "Intro to Statistical Reasoning",
+      "prefix": "STA",
+      "times": [ "Monday 2:00-10:00 PM", "Tuesday 4:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:00-6:00 PM" ]
+    },
+    {
+      "cnumber": 296,
+      "desc": "Enter Desc",
+      "location": "North Campus",
+      "name": "Statistical Methods and Motivations",
+      "prefix": "STA",
+      "times": [ "Tuesday 6:00-10:00 PM", "Wednesday 6:00-10:00 PM", "Thursday 6:00-10:00 PM" ]
+    },
+    {
       "cnumber": 133,
-      "name": "Calculus 1",
-	  "location": "North Campus",
       "desc": "Other stuff",
-      "times": ["Monday 2:00-10:00 PM","Tuesday 4:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:00-10:00 PM" ]
+      "location": "North Campus",
+      "name": "Calculus 1",
+      "prefix": "MA",
+      "times": [ "Monday 2:00-10:00 PM", "Tuesday 4:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:00-10:00 PM" ]
     },
     {
-      "prefix": "KHP",
-      "cnumber": "102",
-      "name": "Walk and Jog",
-	  "location": "South Campus",
-      "desc": "More Stuff",
-      "times": ["Monday 2:00-10:00 PM","Tuesday 4:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:00-10:00 PM" ]
+      "cnumber": 201,
+      "desc": "This course is designed to provide an introduction to financial accounting from the users’ perspectives.",
+      "location": "South Campus",
+      "name": "Financial Accounting I",
+      "prefix": "ACC",
+      "times": [ "Monday 2:00-8:00 PM", "Tuesday 2:00-10:00 PM", "Wednesday 2:00-8:00 PM", "Thursday 2:00-8:00 PM" ]
     },
     {
-      "prefix": "KHP",
-      "cnumber": "102",
-      "name": "Walk and Jog",
-	  "location": "North Campus",
-      "desc": "More Stuff",
-      "times": ["Monday 2:00-10:00 PM","Tuesday 4:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:00-10:00 PM" ]
+      "cnumber": 301,
+      "desc": "Enter Desc",
+      "location": "South Campus",
+      "name": "Intermediate Accounting 1",
+      "prefix": "ACC",
+      "times": [ "Monday 2:00-5:00 PM", "Wednesday 2:00-5:00 PM", "Thursday 4:00-8:00 PM" ]
     },
     {
-      "prefix": "KHP",
-      "cnumber": "102",
-      "name": "Walk and Jog",
-	  "location": "North Campus",
-      "desc": "More Stuff",
-      "times": ["Monday 2:00-10:00 PM","Tuesday 4:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:00-10:00 PM" ]
+      "cnumber": 201,
+      "desc": "Enter Desc",
+      "location": "South Campus",
+      "name": "Principles of Economics 1",
+      "prefix": "ECO",
+      "times": [ "Monday 2:00-8:00 PM", "Tuesday 2:00-10:00 PM", "Wednesday 2:00-8:00 PM", "Thursday 2:00-8:00 PM" ]
     },
     {
-      "prefix": "KHP",
-      "cnumber": "102",
-      "name": "Walk and Jog",
-	  "location": "North Campus",
-      "desc": "More Stuff",
-      "times": ["Monday 2:00-10:00 PM","Tuesday 4:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:00-10:00 PM" ]
+      "cnumber": 391,
+      "desc": "Enter Desc",
+      "location": "South Campus",
+      "name": "Economic and Business Statistics",
+      "prefix": "ECO",
+      "times": [ "Monday 6:00-10:00 PM", "Tuesday 6:00-10:00 PM", "Thursday 4:00-8:00 PM" ]
+    },
+    {
+      "cnumber": 148,
+      "desc": "Enter Desc",
+      "location": "South Campus",
+      "name": "Biology",
+      "prefix": "BIO",
+      "times": [ "Monday 4:00-8:00 PM", "Tuesday 6:00-10:00 PM", "Wednesday 5:00-9:00 PM", "Thursday 6:00-10:00 PM" ]
+    },
+    {
+      "cnumber": 105,
+      "desc": "Enter Desc",
+      "location": "South Campus",
+      "name": "General College Chemistry",
+      "prefix": "CHE",
+      "times": [ "Monday 2:00-10:00 PM", "Tuesday 2:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:00-10:00 PM" ]
+    },
+    {
+      "cnumber": 109,
+      "desc": "Enter Desc",
+      "location": "South Campus",
+      "name": "College Algebra",
+      "prefix": "MA",
+      "times": [ "Monday 2:00-10:00 PM", "Tuesday 2:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:00-10:00 PM" ]
+    },
+    {
+      "cnumber": 110,
+      "desc": "Enter Desc",
+      "location": "South Campus",
+      "name": "Precalculus with Trigonometry",
+      "prefix": "MA",
+      "times": [ "Monday 2:00-10:00 PM", "Tuesday 6:00-10:00 PM", "Wednesday 2:00-10:00 PM" ]
+    },
+    {
+      "cnumber": 111,
+      "desc": "Enter Desc",
+      "location": "South Campus",
+      "name": "Contemporary Mathematics",
+      "prefix": "MA",
+      "times": [ "Monday 2:00-10:00 PM", "Tuesday 2:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:00-10:00 PM" ]
+    },
+    {
+      "cnumber": 113,
+      "desc": "Other stuff",
+      "location": "South Campus",
+      "name": "Calculus 1",
+      "prefix": "MA",
+      "times": [ "Monday 2:00-10:00 PM", "Tuesday 2:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:00-10:00 PM" ]
+    },
+    {
+      "cnumber": 114,
+      "desc": "Enter Desc",
+      "location": "South Campus",
+      "name": "Calculus 2",
+      "prefix": "MA",
+      "times": [ "Monday 2:00-10:00 PM", "Tuesday 2:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:00-10:00 PM" ]
+    },
+    {
+      "cnumber": 123,
+      "desc": "Enter Desc",
+      "location": "South Campus",
+      "name": "Elementary Calculus and its Applications",
+      "prefix": "MA",
+      "times": [ "Monday 2:00-10:00 PM", "Tuesday 2:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:00-10:00 PM" ]
+    },
+    {
+      "cnumber": 137,
+      "desc": "Enter Desc",
+      "location": "South Campus",
+      "name": "Calculus 1 with Life Science Applications",
+      "prefix": "MA",
+      "times": [ "Monday 4:00-9:00 PM", "Wednesday 4:00-9:00 PM", "Thursday 6:00-10:00 PM" ]
+    },
+    {
+      "cnumber": 162,
+      "desc": "Enter Desc",
+      "location": "South Campus",
+      "name": "Finite Math and its Applcations",
+      "prefix": "MA",
+      "times": [ "Monday 6:00-10:00 PM", "Tuesday 4:00-8:00 PM", "Wednesday 2:00-6:00 PM", "Thursday 2:00-6:00 PM" ]
+    },
+    {
+      "cnumber": 213,
+      "desc": "Enter Desc",
+      "location": "South Campus",
+      "name": "Calculus 3",
+      "prefix": "MA",
+      "times": [ "Monday 2:00-10:00 PM", "Tuesday 4:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 6:00-10:00 PM" ]
+    },
+    {
+      "cnumber": 230,
+      "desc": "Enter Desc",
+      "location": "South Campus",
+      "name": "Organic Chemistry",
+      "prefix": "CHE",
+      "times": [ "Monday 3:00-6:00", "Tuesday 6:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 4:00-10:00 PM" ]
+    },
+    {
+      "cnumber": 211,
+      "desc": "Enter Desc",
+      "location": "South Campus",
+      "name": "General Physics Mechanics",
+      "prefix": "PHY",
+      "times": [ "Monday 6:00-10:00 PM", "Tuesday 4:00-8:00 PM", "Wednesday 2:00-6:00 PM", "Thursday 2:00-6:00 PM" ]
+    },
+    {
+      "cnumber": 231,
+      "desc": "Enter Desc",
+      "location": "South Campus",
+      "name": "General University Physics",
+      "prefix": "PHY",
+      "times": [ "Monday 2:00-10:00 PM", "Tuesday 2:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:30-10:00 PM" ]
+    },
+    {
+      "cnumber": 216,
+      "desc": "Enter Desc",
+      "location": "South Campus",
+      "name": "Applications of Statistics and Psychology",
+      "prefix": "PSY",
+      "times": [ "Wednesday 2:00-7:00 PM", "Thursday 5:00-8:00 PM" ]
+    },
+    {
+      "cnumber": 210,
+      "desc": "Enter Desc",
+      "location": "South Campus",
+      "name": "Intro to Statistical Reasoning",
+      "prefix": "STA",
+      "times": [ "Monday 2:00-8:00 PM", "Tuesday 2:00-10:00 PM", "Wednesday 2:00-10:00 PM", "Thursday 2:00-8:00 PM" ]
+    },
+    {
+      "cnumber": 296,
+      "desc": "Enter Desc",
+      "location": "South Campus",
+      "name": "Statistical Methods and Motivations",
+      "prefix": "STA",
+      "times": [ "Monday 2:00-6:00 PM", "Tuesday 6:00-10:00 PM", "Wednesday 4:00-10:00 PM", "Thursday 4:00-8:00 PM" ]
     }
   ],
   "obj": {
-    "number": 1.2345e-6,
-    "enabled": true
+    "enabled": true,
+    "number": 1.2345e-6
   },
   "message": "Strings have to be in double-quotes."
 }
